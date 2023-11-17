@@ -1,0 +1,313 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Ballpen[editby].otf);
+  }
+  @font-face {
+    font-family: mySecondeFont;
+    src: url(BillyOhio[editby].ttf);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+/* body{
+    font-family: myFirstFont !important;
+} */
+/* navbar Start*/
+#navbar{
+    background-color: #f9f9f9;
+}
+
+#logo{
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+}
+
+#logo span{
+    color: #ffa500;
+} 
+.navbar-toggler{
+    color: #ffa500;
+}
+.nav-item{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 15px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 3;
+    border-radius: 3px;
+    transition: .3s ease;
+}
+.nav-item .nav-link:hover{
+    background-color: #ffa500;
+    color: #fff;
+    
+}
+/* navbar end */
+
+/* Home Section Start  */
+.home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+    font-family: mySecondeFont;
+}
+
+.home .content h5{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: #fff;
+    font-size: 95px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 5px;
+}
+
+.Changecontent::after{
+    content: "";
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 5px;
+    animation: ChangeText 20s infinite linear;
+}
+
+@keyframes ChangeText{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Germany";}
+    90%{content: "United Kingdom";}
+}
+
+.home .content p{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.home .content a {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.home .content a:hover{
+    background-color: #ffa500;
+    color: #fff;
+}
+
+@media (max-width: 850px){
+    .home{
+        background-position: 50%;
+    }
+    .home .content h5{
+        font-size: 40px;
+    }
+    .home .content h1{
+        font-size: 70px;
+        font-weight: 300;
+    }
+    .home .content p{
+        font-size: 12px;
+    }
+}
+/* Home Section End  */
+.book{
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px;
+}
+.container{
+    padding: 10px;
+}
+.main-text{
+   width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    text-shadow: 0px 1px 1px #000
+}
+.main-text h1{
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .row{
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+
+.book form input{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+
+.book .row textarea{
+    resize: none;
+    border: none;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+
+.book .row button{
+    font-weight: bold;
+    box-shadow: 0px 5px 5px -5px #000;
+    width: 160px ;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+.book .row button:hover{
+    width: 180px ;
+    background-color: #ffa500;
+}
+/* Book Section Start  */
+
+/* Packages Section Start */
+.card{
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.card .card-body .star .checked{
+    margin-bottom: 10px;
+    color: #ffa500;
+}
+.card .card-body h6{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.card .card-body a{
+    text-decoration: none;
+    padding: 7px;
+   color: #fff;
+    background: #ffa500;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+/* Packages Section End */
+
+
+/* section Services Start */
+
+.services{
+    background-color: #f9f9f9;
+    margin-top: 30px;
+}
+
+.services .card{
+    box-shadow: 0px 5px 5px -6px #000;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.services .card i {
+    font-size: 90px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+/* section Services End */
+
+/* section Gallery Start */
+
+.gallery{
+    margin-top: 30px;
+}
+
+.gallery .card{
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px -6px #000;
+}
+
+.gallery .card img{
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.gallery .card img:hover{
+    transform:  scale(1.1);
+}
+
+/* section Gallery End */
+
+
+/* section about start */
+
+.about{
+    background-color: #f9f9f9;
+    margin-top: 30px;
+}
+.row h2{
+    text-align: center;
+    font-size: 50px;
+}
+.row p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.row .btn-about{
+  width: 150px;
+  background-color: #ffa500;
+  cursor: pointer;
+  color: #fff;
+  transition: .5s ease-in-out;
+  letter-spacing: 3;
+  font-weight: 550;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+
+}
+.row .btn-about:hover{
+    width: 180px;
+
+}
+/* section about End */
